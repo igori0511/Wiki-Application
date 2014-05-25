@@ -1,11 +1,11 @@
 ###This is a basic wiki application on Google App Engine
-####Supports basic functionality this includes:
+####Basic functionality is:
 1. Adding new posts
 2. Registration
 3. Loggin
 4. History
 
-###History is implementer for every new post
+###History is implemented for every new post
 
 
 ###List of handlers:
