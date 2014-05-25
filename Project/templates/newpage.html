@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<link type="text/css" rel="stylesheet" href="/css/stylesheet.css"/>
+
+		<title>Newpost</title>
+	</head>
+
+	<body>
+
+		
+
+		<!--create an input form-->
+		<form method = "post">
+
+			<div id = "user2"> <a href ="/logout">logout</a>
+			</div>
+
+			<textarea name = "content">{% if wikidata %}{{wikidata.content}}{% endif %}</textarea>
+		
+			<br>
+			<input type="submit" id = "submit" value = "Save"> </input>
+
+
+		</form>	
+
+
+	</body>
+
+</html>

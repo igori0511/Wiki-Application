@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		
+	   <link type="text/css" rel="stylesheet" href="/css/stylesheet.css"/>
+	   <title>Wiki Page</title>
+
+	</head>
+
+	<body>
+
+
+		
+
+		<div id = "login_system">
+			<b>
+			<a href = "/login">login</a>
+			|
+			<a href = "/signup">signup</a>
+			</b>
+     	</div>
+
+
+		<!--display data associated with this link,with rendered code-->
+		
+		<div class = "page">
+
+		  {% if wikidata %}
+
+		  <pre>{{wikidata.content|safe}}</pre>
+		  
+		  {% endif %}
+
+		</div>
+
+	</body>
+
+</html>

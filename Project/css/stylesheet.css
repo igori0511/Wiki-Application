@@ -1,0 +1,92 @@
+
+.page{
+	position:absolute;
+	margin-top:8em;
+	margin-left:6em;
+}
+
+
+table{
+	table-layout: fixed;
+	width:75%;
+	font-weight:bold;
+	font-size:1.2em;
+	text-align: center;
+	border-spacing:10px;
+}
+
+td{
+	vertical-align: center;
+}
+
+#centercolumn{
+	width:400px;
+	font-family:monospace;
+	background-color:#4A4A4A;
+	color:#FFFFFF;
+}
+
+#wordwrap{
+	word-wrap:break-word;
+}
+
+#firstcolumn{
+	width:280px;
+}
+#thirdcolumn{
+	width:100px;
+	text-align: right;
+}
+#fourthcolumn{
+	width:50px;
+}
+
+
+#login_system{
+	font-family: Times new Roman;
+	float: right;
+	margin-right: 7em;
+	margin-top: 0.1em;
+	font-size: 1.1em;
+	position:relative;
+
+}
+textarea{
+	margin-left:5em;
+	width: 92%;
+	height:35em;
+	margin-top:3em;
+
+}
+
+
+#user{
+	font-family: Times new Roman;
+	font-size: 1.1em;
+	display: inline-block;
+	margin-left:4em;
+
+}
+
+#user2{
+	font-family: Times new Roman;
+	font-size: 1.1em;
+	float:right;
+	margin-right: 3.3em;
+}
+
+#submit{
+	margin-left:3.3em;
+	width: 85px;
+	height:35px;
+	font-size: 20px;
+	position:;
+}
+
+a:link{
+	text-decoration:none;
+    color:green;
+}
+a:hover{
+	color:#F20707;	
+}

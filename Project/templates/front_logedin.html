@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		
+	   <link type="text/css" rel="stylesheet" href="/css/stylesheet.css"/>
+	   <title>Wiki Page</title>
+
+	</head>
+
+	<body>
+
+		<div id = "login_system">
+			<b>
+			<a href = "/_edit{{link}}">edit</a>
+			|
+			<a href = "/_history{{link}}">history</a>
+
+			<div id = "user">
+			(<a href ="/logout">logout</a>)
+			</div>
+
+			</b>
+     	</div>
+
+		<!--display data associated with this link-->
+		<div class = "page">
+		  {% if wikidata %}
+
+		  <pre>{{wikidata.content|safe}}</pre>
+		  
+		  {% endif %}
+		</div>  
+
+	</body>
+
+</html>

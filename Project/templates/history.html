@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		
+	   <link type="text/css" rel="stylesheet" href="/css/stylesheet.css"/>
+	   <title>Wiki Page</title>
+
+	</head>
+
+	<body>
+
+		<div id = "login_system">
+			<b>
+			<a href = "/_edit{{link}}">edit</a>
+			|
+			<a href = "{{link}}">view</a>
+
+			<div id = "user">
+			(<a href ="/logout">logout</a>)
+			</div>
+
+			</b>
+     	</div>
+
+		<!--display data associated with this link-->
+		<div class = "page">
+
+		  {% for data in  wikidata%}
+
+
+			 <table>
+
+			  	<tr>
+			  		<td id = "firstcolumn">{{data.created.strftime("%a %b %Y %X")}}</td>
+
+			  		<td id = "centercolumn"
+			  			<div>
+			  			<p id = "wordwrap">{{data.content[:100]}}</p>
+			  			</div>
+			  		
+			  		</td>
+
+			  		<td id = "thirdcolumn"><a href = "{{link}}?v={{data.key().id()}}">view</a> </td>
+
+			  		<td id = "fourthcolumn"><a href = "/_edit{{link}}?v={{data.key().id()}}">edit</a>	 </td>
+			  	</tr>
+	
+		  	</table>		
+		  
+		  
+		  {% endfor %}
+
+		</div>  
+
+	</body>
+
+</html>
