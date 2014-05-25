@@ -9,12 +9,12 @@
 
 
 ###List of handlers:
-('/signup', Signup),
-('/login' , Login),
-('/logout', Logout),
-('/_history' + PAGE_RE,History),
-('/_edit' + PAGE_RE, EditPage),                           
-(PAGE_RE, WikiPage)
+1. ('/signup', Signup),
+2. ('/login' , Login),
+3. ('/logout', Logout),
+4. ('/_history' + PAGE_RE,History),
+5. ('/_edit' + PAGE_RE, EditPage),                           
+6. (PAGE_RE, WikiPage)
 
 
 
